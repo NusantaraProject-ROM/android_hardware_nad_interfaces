@@ -32,7 +32,7 @@ cc_binary {
         },
     },
     product_variables: {
-        lineage: {
+        du: {
             should_wait_for_qsee: {
                 cflags: ["-DWAIT_FOR_QSEE"],
             },
