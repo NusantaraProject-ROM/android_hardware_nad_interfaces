@@ -25,14 +25,11 @@ cc_binary {
     ],
     arch: {
         arm: {
-            shared_libs: [
-                "libhwbinder",
-            ],
             cflags: ["-DARCH_ARM_32"],
         },
     },
     product_variables: {
-        du: {
+        nad: {
             should_wait_for_qsee: {
                 cflags: ["-DWAIT_FOR_QSEE"],
             },
@@ -43,7 +40,6 @@ cc_binary {
         "libbase",
         "libdl",
         "libhidlbase",
-        "libhidltransport",
         "libutils",
         "vendor.qti.hardware.cryptfshw@1.0",
     ],
